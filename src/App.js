@@ -1,10 +1,10 @@
 import "./App.css";
-import Scoreboard from "./components/Scoreboard";
+import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
   return (
     <div className="App">
-      <Scoreboard />
+      <ShoppingCart />
     </div>
   );
 }
