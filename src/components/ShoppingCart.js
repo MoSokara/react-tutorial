@@ -37,18 +37,19 @@ export default function ShoppingCart() {
   }
 
   function handleDecreaseClick(productId) {
-    setProducts(
-      products.map((product) => {
-        if (product.id === productId) {
-          return {
-            ...product,
-            count: product.count - 1,
-          };
-        } else {
-          return product;
+    let newProducts = [];
+
+    for (let product of products) {
+      if (product.id === productId) {
+        if (product.count > 1) {
+          newProducts.push({ ...product, count: product.count - 1 });
         }
-      }),
-    );
+      } else {
+        newProducts.push(product);
+      }
+    }
+
+    setProducts(newProducts);
   }
 
   return (
