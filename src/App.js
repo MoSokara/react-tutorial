@@ -1,10 +1,10 @@
 import "./App.css";
-import ShoppingCart from "./components/ShoppingCart";
+import RepeatingState from "./components/RepeatingState";
 
 function App() {
   return (
     <div className="App">
-      <ShoppingCart />
+      <RepeatingState />
     </div>
   );
 }

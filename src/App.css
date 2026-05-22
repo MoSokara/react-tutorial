@@ -22,29 +22,7 @@
   padding: 2rem;
 }
 
-.shopping-cart {
-  list-style: none;
-  background-color: white;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 1rem;
-}
-
-.shopping-cart li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.shopping-cart li:last-child {
-  border-bottom: none;
-}
-
-.shopping-cart button {
-  margin-left: 1rem;
-  padding: 0.25rem 0.5rem;
-  border: none;
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
+.container {
+  display: flex;
+  flex-direction: column;
 }
