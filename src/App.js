@@ -1,10 +1,10 @@
 import "./App.css";
-import RepeatingState from "./components/RepeatingState";
+import Calculation from "./components/Calculation";
 
 function App() {
   return (
     <div className="App">
-      <RepeatingState />
+      <Calculation />
     </div>
   );
 }
